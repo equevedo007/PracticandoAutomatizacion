@@ -3,6 +3,6 @@ Feature: Rest test
   It is necessary to check availability of Users endpoint and verify the status of any user
 
   Scenario: the user is active
-    Given the URL https://gorest.co.in/
+    Given the URL "https://gorest.co.in/public/v2/users/2522"
     When I check the application status
-    Then the API should contain active
+    Then the API should contain "active"

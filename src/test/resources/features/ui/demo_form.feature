@@ -11,6 +11,7 @@ Feature: Demo Form
     # How you would refactor next steps in order to get a declarative step
     And fills "First Name" with "juan"
     And fills "Last Name" with "perez"
+    And fills "Gender" with "Male"
     And fills "Mobile Number" with "1234567890"
     And clicks on "submit"
     Then The Page says "Thanks for submitting the form"

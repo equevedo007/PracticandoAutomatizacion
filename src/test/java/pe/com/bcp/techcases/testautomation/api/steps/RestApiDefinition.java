@@ -17,7 +17,7 @@ public class RestApiDefinition {
     String URL = "";
 
 
-    @Given("the URL {}")
+    @Given("the URL {string}")
     public void the_url_is_ok(String url) {
         assertThat(url).isNotEmpty();
         URL = url;
@@ -25,11 +25,11 @@ public class RestApiDefinition {
 
     @When("I check the application status")
     public void i_check_the_application_status() {
-        throw new NotImplementedException("please implement this step");
+        jhon.readStatus(URL);
     }
 
     @Then("the API should contain {}")
     public void the_API_should_return(String expectedMessage) {
-        throw new NotImplementedException("please implement this step");
+        jhon.readContent(expectedMessage);
     }
 }
