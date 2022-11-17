@@ -26,10 +26,13 @@ public class RestApiDefinition {
     @When("I check the application status")
     public void i_check_the_application_status() {
         jhon.readStatus(URL);
+
+
     }
 
-    @Then("the API should contain {}")
+    @Then("the API should contain {string}")
     public void the_API_should_return(String expectedMessage) {
         jhon.readContent(expectedMessage);
+
     }
 }
