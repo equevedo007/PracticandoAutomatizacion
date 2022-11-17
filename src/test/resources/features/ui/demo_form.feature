@@ -5,6 +5,11 @@ Feature: Demo Form
   1) It is necessary to complete scenario to verify form submit with minimum fields
   2) Add alternative scenarios to validate error messages
 
+  # Scenerio: enviar formulario con requisitos mínimos
+  # Given the URL "https://demoqa.com/automation-practice-form"
+  # Whem I send the form with DefaultUser data
+  # Then The Page says 'Frist Name'
+
   Scenario: submit form with minimum requirements
     Given a DefaultUser
     When visits PracticeFormPage
@@ -14,7 +19,6 @@ Feature: Demo Form
     And fills "Mobile Number" with "123456789"
     And clicks on "submit"
     Then The Page says "123456789"
-
 
 
   Scenario: validate error messages
