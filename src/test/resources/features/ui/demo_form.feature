@@ -18,10 +18,10 @@ Feature: Demo Form
     And clicks on "gender-radio-1"
     And fills "Mobile Number" with "123456789"
     And clicks on "submit"
-    Then The Page says "123456789"
+    Then The Page says "Thanks for submitting the form"
 
 
-  Scenario: validate error messages
+  Scenario: submit form with full requirements
     Given a DefaultUser
     When visits PracticeFormPage
     And fills "First Name" with "Edinson Ismael"
@@ -29,5 +29,7 @@ Feature: Demo Form
     And fills "name@example.com" with "quevedo.edinson@gmail.com"
     And clicks on "gender-radio-1"
     And fills "Mobile Number" with "950457355"
+    And fills "Current Address" with "Jr. Los Pinos 787 KM.11 - La Libertad"
     And clicks on "submit"
     Then The Page says "950457355"
+
