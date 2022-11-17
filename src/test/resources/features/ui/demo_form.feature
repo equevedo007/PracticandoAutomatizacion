@@ -18,7 +18,7 @@ Feature: Demo Form
     And clicks on "gender-radio-1"
     And fills "Mobile Number" with "123456789"
     And clicks on "submit"
-    Then The Page says "Thanks for submitting the form"
+    Then The Page says "123456789"
 
 
   Scenario: submit form with full requirements
