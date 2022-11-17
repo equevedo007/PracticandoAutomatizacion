@@ -9,9 +9,11 @@ Feature: Demo Form
     Given a DefaultUser
     When visits PracticeFormPage
     # How you would refactor next steps in order to get a declarative step
-    And fills "First Name" with "juan"
-    And fills "Last Name" with "perez"
-    And fills "Gender" with "Male"
-    And fills "Mobile Number" with "1234567890"
+    And fills "First Name" with "Edinson"
+    And fills "Last Name" with "Quevedo"
+    And fills "name@example.com" with "quevedo.edinson@gmail.com"
+    And clicks on "gender-radio-1"
+    And fills "Mobile Number" with "950457355"
     And clicks on "submit"
     Then The Page says "Thanks for submitting the form"
+

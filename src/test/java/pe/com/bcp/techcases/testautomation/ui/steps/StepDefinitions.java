@@ -66,5 +66,8 @@ public class StepDefinitions {
     @Then("The Page says {string}")
     public void thePageSays(String text) throws IllegalAccessException {
         assertThat(jhon.isAbleToSee(text)).isTrue();
+
+
+
     }
 }
