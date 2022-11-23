@@ -63,6 +63,12 @@ public class StepDefinitions {
         jhon.fillsField(field, value);
     }
 
+    @And("fillsWithNumber {string} with {string}")
+    public void fillsWithNumber(String field, int value) throws IllegalAccessException {
+        jhon.fillsFieldNumber(field, value);
+    }
+
+
     @Then("The Page says {string}")
     public void thePageSays(String text) throws IllegalAccessException {
         assertThat(jhon.isAbleToSee(text)).isTrue();

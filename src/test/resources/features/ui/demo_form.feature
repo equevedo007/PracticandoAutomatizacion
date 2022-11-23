@@ -8,7 +8,7 @@ Feature: Demo Form
   # Scenerio: enviar formulario con requisitos mínimos
   # Given the URL "https://demoqa.com/automation-practice-form"
   # Whem I send the form with DefaultUser data
-  # Then The Page says 'Frist Name'
+  # Then The Page says 'Frist Name'saasas
 
   Scenario: submit form with minimum requirements
     Given a DefaultUser

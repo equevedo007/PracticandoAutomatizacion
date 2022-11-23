@@ -57,6 +57,13 @@ public class DefaultUser extends ScenarioSteps {
     }
 
     @Step
+    public void fillsFieldNumber(String elementName, int value) throws IllegalAccessException {
+        ((JavascriptExecutor)getDriver()).executeScript(
+                "arguments[0].scrollIntoView();arguments[0].setAttribute('value', arguments[1])",
+                getReflexiveElement(elementName), value);
+    }
+
+    @Step
     public boolean isAbleToSee(String elementName) throws IllegalAccessException {
         try{
             return getReflexiveElement(elementName).isDisplayed();

@@ -33,6 +33,5 @@ public class RestApiDefinition {
     @Then("the API should contain {string}")
     public void the_API_should_return(String expectedMessage) {
         jhon.readContent(expectedMessage);
-
     }
 }
