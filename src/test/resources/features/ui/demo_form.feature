@@ -16,9 +16,9 @@ Feature: Demo Form
     And fills "First Name" with "juan"
     And fills "Last Name" with "perez"
     And clicks on "gender-radio-1"
-    And fills "Mobile Number" with "987654321"
+    And fills "Mobile Number" with "123456789"
     And clicks on "submit"
-    Then The Page says "987654321"
+    Then The Page says "123456789"
 
 
   Scenario: submit form with full requirements
