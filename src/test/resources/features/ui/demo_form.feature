@@ -28,8 +28,8 @@ Feature: Demo Form
     And fills "Last Name" with "Quevedo Holguin"
     And fills "name@example.com" with "quevedo.edinson@gmail.com"
     And clicks on "gender-radio-1"
-    And fills "Mobile Number" with "950457355"
+    And fills "Mobile Number" with "123321123"
     And fills "Current Address" with "Jr. Los Pinos 787 KM.11 - La Libertad"
     And clicks on "submit"
-    Then The Page says "950457355"
+    Then The Page says "123321123"
 
